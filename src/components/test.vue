@@ -2,10 +2,10 @@
  * @Author: niezihao 1332421989@qq.com
  * @Date: 2023-07-14 17:42:17
  * @LastEditors: niezihao 1332421989@qq.com
- * @LastEditTime: 2023-07-14 17:42:48
+ * @LastEditTime: 2023-07-17 09:59:17
 -->
 <template>
-  <div>count:{{ count }} <button @click="addCount">count++</button></div>
+  <div>count:{{ count }} <ElButton @click="addCount">count++</ElButton></div>
 </template>
 
 <script setup lang="ts">
