@@ -11,12 +11,14 @@
   "dependencies": {
     "axios": "^0.21.1",
     "element-plus": "^2.3.8",
+    "js-cookie": "^3.0.1",
     "pinia": "^2.1.6",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4",
     "vuex": "^4.1.0"
   },
   "devDependencies": {
+    "@types/js-cookie": "^3.0.3",
     "@types/node": "^20.4.2",
     "@vitejs/plugin-vue": "^4.2.3",
     "unplugin-auto-import": "^0.16.6",
