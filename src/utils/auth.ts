@@ -1,13 +1,6 @@
-/*
- * @Author: niezihao 1332421989@qq.com
- * @Date: 2023-08-01 10:48:58
- * @LastEditors: niezihao 1332421989@qq.com
- * @LastEditTime: 2023-08-01 10:57:57
- * @FilePath: \vue3-ts-app\src\utils\auth.ts
- */
-import Cookies from "js-cookie";
+import Cookies from 'js-cookie';
 // 设置token键值
-const TokenKey = "Access-Token";
+const TokenKey = 'ACCESS-TOKEN';
 /**
  * 获取token
  */
@@ -28,13 +21,16 @@ export function removeToken() {
   return Cookies.remove(TokenKey);
 }
 // refreshToken键值
-const RefreshTokenKey = "Refresh-Token";
+const RefreshTokenKey = 'REFRESH-TOKEN';
+
 export function getRefreshToken() {
   return Cookies.get(RefreshTokenKey);
 }
+
 export function setRefreshToken(token: string) {
-  return Cookies.set(RefreshTokenKey, token, { expires: 7 });
+  return Cookies.set(RefreshTokenKey, token, { expires: 2 });
 }
+
 export function removeRefreshToken() {
   return Cookies.remove(RefreshTokenKey);
 }

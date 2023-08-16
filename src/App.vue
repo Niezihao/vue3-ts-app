@@ -1,12 +1,18 @@
-<!--
- * @Author: niezihao 1332421989@qq.com
- * @Date: 2023-07-14 15:45:09
- * @LastEditors: niezihao 1332421989@qq.com
- * @LastEditTime: 2023-07-14 17:57:37
--->
 <template>
-  <router-view></router-view>
+  <el-config-provider :locale="locale">
+    <router-view></router-view>
+  </el-config-provider>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ElConfigProvider } from 'element-plus'
+import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 
-<style scoped></style>
+const locale = zhCn;
+</script>
+
+<style lang="scss">
+body {
+  margin: 0;
+  padding: 0;
+}
+</style>
