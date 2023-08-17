@@ -125,8 +125,8 @@ import {
   updatePwd,
   delUser,
   getUserInfoById,
-} from "@/utils/API/user/user";
-import { allRole } from "@/utils/API/user/role";
+} from "@/utils/api/user/user";
+import { allRole } from "@/utils/api/user/role";
 import { useStore } from "@/store";
 import { dictAssignment } from "@/utils/dict";
 
@@ -204,7 +204,7 @@ const {
 
 // 角色数据转换为角色名称
 let role_name = computed(
-  () => (roles: any) => roles.map((item: any) => item.role_name)
+  () => (roles: any) => roles.map((item: any) => item.role_name).toString()
 );
 // 按照分页显示数据的函数
 const getListUser = () => {
@@ -372,7 +372,18 @@ const state = reactive({
           trigger: "change",
         },
       ],
-      selectList: [],
+      selectList: [
+        {
+          type: "radio",
+          label: "启用",
+          value: "1",
+        },
+        {
+          type: "radio",
+          label: "禁用",
+          value: "0",
+        },
+      ],
       show: ["add", "edit"],
     },
   ],

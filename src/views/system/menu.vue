@@ -136,7 +136,7 @@ import {
   addMenu,
   deleteMenus,
   updateMenu
-} from '@/utils/Api/user/menu';
+} from '@/utils/api/user/menu';
 
 import SvgIcon from '@/components/SvgIcon/index.vue';
 import IconSelect from '@/components/IconSelect/index.vue';

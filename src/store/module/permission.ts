@@ -1,3 +1,10 @@
+/*
+ * @Author: niezihao 1332421989@qq.com
+ * @Date: 2023-08-16 17:54:45
+ * @LastEditors: niezihao 1332421989@qq.com
+ * @LastEditTime: 2023-08-17 14:29:10
+ * @FilePath: \vue3-ts-app\src\store\module\permission.ts
+ */
 import { Module } from 'vuex';
 import { constantRoutes } from '@/router';
 import { RouteRecordRaw } from 'vue-router';
@@ -45,6 +52,8 @@ export const permission: Module<permissionState, rootState> = {
     SET_ROUTES: (state, routes) => {
       state.addRoutes = routes;
       state.routes = constantRoutes.concat(routes);
+      console.log('state.routes',state.routes);
+      
     }
   },
 
