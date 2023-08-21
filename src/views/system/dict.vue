@@ -1,5 +1,5 @@
 <template>
-  <div class="content-title">字典管理</div>
+  <!-- <div class="content-title">字典管理</div> -->
   <div class="content-container">
     <!-- 搜索栏、表格 -->
     <dataTable
@@ -330,7 +330,7 @@ const state = reactive({
       label: "状态",
       rules: [{ required: true, message: "状态值不能为空", trigger: "change" }],
       selectList: [
-      {
+        {
           type: "radio",
           label: "启用",
           value: "1",
@@ -339,7 +339,8 @@ const state = reactive({
           type: "radio",
           label: "禁用",
           value: "0",
-        },],
+        },
+      ],
     },
   ],
   currentRow: undefined,

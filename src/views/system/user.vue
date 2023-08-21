@@ -1,5 +1,5 @@
 <template>
-  <div class="content-title">用户管理</div>
+  <!-- <div class="content-title">用户管理</div> -->
   <div class="content-container">
     <!-- 搜索栏、表格 -->
     <dataTable
@@ -137,10 +137,10 @@ onMounted(() => {
   // 获取角色
   getRoles();
   console.log();
-  
-  dictAssignment('status', state.formOptions)
-  dictAssignment('status', tableState.searchConfig)
-  dictAssignment('status', tableState.dict)
+
+  dictAssignment("status", state.formOptions);
+  dictAssignment("status", tableState.searchConfig);
+  dictAssignment("status", tableState.dict);
 });
 // 获取vuex
 const store = useStore();

@@ -21,7 +21,7 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue';
 import { ElMessage, FormInstance } from 'element-plus'
-import { updatePwd } from '@/utils/API/user/user';
+import { updatePwd } from '@/utils/api/user/user';
 import { store } from '@/store';
 import router from '@/router';
 // 引入弹窗关闭的方法
