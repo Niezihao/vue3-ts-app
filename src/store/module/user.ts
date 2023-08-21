@@ -1,7 +1,7 @@
 import { Module } from 'vuex';
 // 导入api
-import { userLogin } from '@/utils/API/user/user';
-import { getUserInfo } from '@/utils/Api/user/personalCenter';
+import { userLogin } from '@/utils/api/user/user';
+import { getUserInfo } from '@/utils/api/user/personalCenter';
 // 导入重置路由的函数
 import { resetRouter } from '@/router';
 // 导入操作token的方法
