@@ -136,9 +136,11 @@ import { dictAssignment } from "@/utils/dict";
 onMounted(() => {
   // 获取角色
   getRoles();
-  // dictAssignment('status', state.formOptions)
-  // dictAssignment('status', tableState.searchConfig)
-  // dictAssignment('status', tableState.dict)
+  console.log();
+  
+  dictAssignment('status', state.formOptions)
+  dictAssignment('status', tableState.searchConfig)
+  dictAssignment('status', tableState.dict)
 });
 // 获取vuex
 const store = useStore();
